@@ -1,0 +1,112 @@
+.header {
+  background: #151515 url("../images/intro-bg.jpg") no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.header .text-container {
+  z-index: 10;
+}
+
+.header .roles {
+  font-family: "lora-regular", serif;
+}
+
+.header .social {
+  bottom: 50px;
+}
+.header .social a {
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+}
+.header .social a:hover {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  outline: 2px solid var(--bs-primary);
+  outline-offset: 3px;
+  transition: all 0.5 ease-in-out;
+  -webkit-transition: all 0.5 ease-in-out;
+  -moz-transition: all 0.5 ease-in-out;
+  -ms-transition: all 0.5 ease-in-out;
+  -o-transition: all 0.5 ease-in-out;
+}
+
+.about-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.project {
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.services {
+  background: #151515 url("../images/bg.jpg") no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.services .container {
+  z-index: 10;
+}
+.services:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 767px) {
+  .header .social {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .header .roles {
+    font-size: 18px !important;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+  .stats .stat {
+    border-right: 0 !important;
+    margin-bottom: 40px;
+    border-bottom: var(--bs-dark) solid 1px;
+    padding-bottom: 20px;
+  }
+}
